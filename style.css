@@ -1,0 +1,148 @@
+* {
+    color: #007CBE;
+    
+}
+
+html {
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffff, #79777789)
+}
+
+body {
+    margin: 0px;
+    padding: 10px 25px 10px 25px;
+    box-sizing: border-box;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+header {
+    margin-bottom: 20px;
+    color: #007CBE;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    font-style: normal;
+}
+
+input, #enter {
+    text-align: center;
+    margin-bottom: 5px;
+    height: 25px;
+    border: 2px solid black;
+}
+
+
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    box-sizing: border-box;
+}
+
+.forecastDiv {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    /* background: linear-gradient(to bottom, #ffffff, #797777) */
+}
+
+.forecast-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px 10px;
+}
+
+.item-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        padding: 10px 10px 10px 10px;
+    }
+
+    header {
+        margin-bottom: 0px;
+    }
+
+    .header {
+        font-size: 32px;
+    }
+
+    #forecast {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
